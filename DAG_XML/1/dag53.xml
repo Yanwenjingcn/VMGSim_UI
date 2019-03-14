@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adag version="2.1" count="1" index="0" name="DAGdag53" jobCount="3" fileCount="0" childCount="2">
+  <job id="0" nammespace="DAG" name="0" version="1.0" tasklength="25">
+    <uses file="0_1" link="output" register="false" transfer="false" optional="false" type="data" size="12" />
+  </job>
+  <job id="1" nammespace="DAG" name="1" version="1.0" tasklength="46">
+    <uses file="0_1" link="input" register="false" transfer="false" optional="false" type="data" size="12" />
+    <uses file="1_2" link="output" register="false" transfer="false" optional="false" type="data" size="24" />
+  </job>
+  <job id="2" nammespace="DAG" name="2" version="1.0" tasklength="2">
+    <uses file="1_2" link="input" register="false" transfer="false" optional="false" type="data" size="24" />
+  </job>
+  <child ref="1">
+    <parent ref="0" />
+  </child>
+  <child ref="2">
+    <parent ref="1" />
+  </child>
+</adag>
+
