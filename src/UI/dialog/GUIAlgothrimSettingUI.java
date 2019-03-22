@@ -63,108 +63,112 @@ public class GUIAlgothrimSettingUI extends Dialog {
 	private void createContents() {
 
 		shell = new Shell(getParent(), getStyle());
-		shell.setSize(410, 780);
+		//shell.setSize(410, 780);
+		shell.setSize(570, 400);
 		shell.setText("Algorithms");
 		shell.setLayout(null);
 
 		Label FIFOLabel = new Label(shell, SWT.NONE);
 		FIFOLabel.setText("FIFO");
-		FIFOLabel.setBounds(70, 30, 58, 17);
+		FIFOLabel.setBounds(70, 30, 60, 17);
 
 		Label EDFLabel = new Label(shell, SWT.NONE);
 		EDFLabel.setText("EDF");
-		EDFLabel.setBounds(70, 80, 88, 17);
+		EDFLabel.setBounds(70, 80, 60, 17);
 
 		Label STFLabel = new Label(shell, SWT.NONE);
 		STFLabel.setText("STF");
-		STFLabel.setBounds(70, 130, 88, 17);
+		STFLabel.setBounds(70, 130, 60, 17);
 
 		Label EFTFLabel = new Label(shell, SWT.NONE);
 		EFTFLabel.setText("EFTF");
-		EFTFLabel.setBounds(70, 180, 88, 17);
+		EFTFLabel.setBounds(70, 180, 60, 17);
 
 		Label DCBF_IDLabel = new Label(shell, SWT.NONE);
 		DCBF_IDLabel.setText("DCBF_ID");
-		DCBF_IDLabel.setBounds(70, 230, 114, 17);
+		DCBF_IDLabel.setBounds(70, 230, 60, 17);
 		
 		Label DCBF_LFLabel = new Label(shell, SWT.NONE);
 		DCBF_LFLabel.setText("DCBF_LF");
-		DCBF_LFLabel.setBounds(70, 280, 114, 17);
+		DCBF_LFLabel.setBounds(70, 280, 60, 17);
+		
+		//----------------第二行--------------
 		
 		Label DCBF_SFLabel = new Label(shell, SWT.NONE);
 		DCBF_SFLabel.setText("DCBF_SF");
-		DCBF_SFLabel.setBounds(70, 330, 114, 17);
+		DCBF_SFLabel.setBounds(340, 30, 60, 17);
 		
 		Label DCMG_IDLabel = new Label(shell, SWT.NONE);
 		DCMG_IDLabel.setText("DCMG_ID");
-		DCMG_IDLabel.setBounds(70, 380, 114, 17);
+		DCMG_IDLabel.setBounds(340, 80, 60, 17);
 		
 		Label DCMG_LFLabel = new Label(shell, SWT.NONE);
 		DCMG_LFLabel.setText("DCMG_LF");
-		DCMG_LFLabel.setBounds(70, 430, 114, 17);
+		DCMG_LFLabel.setBounds(340, 130, 60, 17);
 		
 		Label DCMG_SFLabel = new Label(shell, SWT.NONE);
 		DCMG_SFLabel.setText("DCMG_SF");
-		DCMG_SFLabel.setBounds(70, 480, 114, 17);
+		DCMG_SFLabel.setBounds(340, 180, 60, 17);
 		
 		Label MCSWLabel = new Label(shell, SWT.NONE);
 		MCSWLabel.setText("MCSW");
-		MCSWLabel.setBounds(70, 530, 114, 17);
+		MCSWLabel.setBounds(340, 230, 60, 17);
 		
 		Label HEFTLabel = new Label(shell, SWT.NONE);
 		HEFTLabel.setText("HEFT");
-		HEFTLabel.setBounds(70, 580, 114, 17);
+		HEFTLabel.setBounds(340, 280, 60, 17);
 
 
 	       /**
          * 每行的纵左边都是间隔50
          */
 		final Button FIFOButton = new Button(shell, SWT.CHECK);
-		FIFOButton.setBounds(220, 30, 90, 17);
+		FIFOButton.setBounds(160, 30, 90, 17);
 		FIFOButton.setText("FIFO");
 		
 		final Button EDFButton = new Button(shell, SWT.CHECK);
-		EDFButton.setBounds(220, 80, 97, 17);
+		EDFButton.setBounds(160, 80, 97, 17);
 		EDFButton.setText("EDF");
 		
 		final Button STFButton = new Button(shell, SWT.CHECK);
-		STFButton.setBounds(220, 130, 97, 17);
+		STFButton.setBounds(160, 130, 97, 17);
 		STFButton.setText("STF");
 		
 		final Button EFTFButton = new Button(shell, SWT.CHECK);
-		EFTFButton.setBounds(220, 180, 97, 17);
+		EFTFButton.setBounds(160, 180, 97, 17);
 		EFTFButton.setText("EFTF");
 		
 		final Button DCBF_IDButton = new Button(shell, SWT.CHECK);
-		DCBF_IDButton.setBounds(220, 230, 126, 17);
+		DCBF_IDButton.setBounds(160, 230, 126, 17);
 		DCBF_IDButton.setText("DCBF_ID");
 		
 		final Button DCBF_LFButton = new Button(shell, SWT.CHECK);
-		DCBF_LFButton.setBounds(220, 280, 126, 17);
+		DCBF_LFButton.setBounds(160, 280, 126, 17);
 		DCBF_LFButton.setText("DCBF_LF");
 		
+		//-------------第二行---------------
 		final Button DCBF_SFButton = new Button(shell, SWT.CHECK);
-		DCBF_SFButton.setBounds(220, 330, 126, 17);
+		DCBF_SFButton.setBounds(430, 30, 126, 17);
 		DCBF_SFButton.setText("DCBF_SF");
 		
 		final Button DCMG_IDButton = new Button(shell, SWT.CHECK);
-		DCMG_IDButton.setBounds(220, 380, 126, 17);
+		DCMG_IDButton.setBounds(430, 80, 126, 17);
 		DCMG_IDButton.setText("DCMG_ID");
 		
 		final Button DCMG_LFButton = new Button(shell, SWT.CHECK);
-		DCMG_LFButton.setBounds(220, 430, 126, 17);
+		DCMG_LFButton.setBounds(430, 130, 126, 17);
 		DCMG_LFButton.setText("DCMG_LF");
 		
 		final Button DCMG_SFButton = new Button(shell, SWT.CHECK);
-		DCMG_SFButton.setBounds(220, 480, 126, 17);
+		DCMG_SFButton.setBounds(430, 180, 126, 17);
 		DCMG_SFButton.setText("DCMG_SF");
 		
 		final Button MCSWButton = new Button(shell, SWT.CHECK);
-		MCSWButton.setBounds(220, 530, 126, 17);
+		MCSWButton.setBounds(430, 230, 126, 17);
 		MCSWButton.setText("MCSW");
 		
 		final Button HEFTButton = new Button(shell, SWT.CHECK);
-		HEFTButton.setBounds(220, 580, 126, 17);
+		HEFTButton.setBounds(430, 280, 126, 17);
 		HEFTButton.setText("HEFT");
 		
 		
@@ -256,7 +260,7 @@ public class GUIAlgothrimSettingUI extends Dialog {
 		});
 
 		btnNewButton.setSelection(true);
-		btnNewButton.setBounds(69, 700, 80, 27);
+		btnNewButton.setBounds(120, 330, 80, 27);
 		btnNewButton.setText("OK");
 
 		//取消按钮
@@ -268,7 +272,7 @@ public class GUIAlgothrimSettingUI extends Dialog {
 				shell.close();
 			}
 		});
-		btnNewButton_1.setBounds(244, 700, 80, 27);
+		btnNewButton_1.setBounds(320, 330, 80, 27);
 		btnNewButton_1.setText("Cancel");
 
 	}

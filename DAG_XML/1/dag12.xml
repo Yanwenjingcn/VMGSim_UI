@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<adag version="2.1" count="1" index="0" name="DAGdag12" jobCount="1" fileCount="0" childCount="0">
-  <job id="0" nammespace="DAG" name="0" version="1.0" tasklength="56" />
-</adag>
-

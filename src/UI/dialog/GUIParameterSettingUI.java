@@ -8,9 +8,9 @@ import org.eclipse.swt.widgets.*;
 /**
  * 
 * @ClassName: GUIParameterSetting
-* @Description: 参数设置框
+* @Description: 鍙傛暟璁剧疆妗�
 * @author Wengie Yan
-* @date 2018年12月12日
+* @date 2018骞�12鏈�12鏃�
  */
 public class GUIParameterSettingUI extends Dialog {
 
@@ -29,7 +29,7 @@ public class GUIParameterSettingUI extends Dialog {
 	public double deadLineTimes;
 	public int processorNumber;
 	
-	//多次分析时 默认计算轮次
+	//澶氭鍒嗘瀽鏃� 榛樿璁＄畻杞
 	public int defaultRoundTime=2;
 
 	/**
@@ -72,7 +72,8 @@ public class GUIParameterSettingUI extends Dialog {
 	 */
 	private void createContents() {
 		parameterSettingShell = new Shell(getParent(), getStyle());
-		parameterSettingShell.setSize(440, 420);
+		//parameterSettingShell.setSize(440, 420);
+		parameterSettingShell.setSize(600, 420);
 		parameterSettingShell.setText("Parameters Setting");
 		parameterSettingShell.setLayout(null);
 
@@ -115,20 +116,20 @@ public class GUIParameterSettingUI extends Dialog {
 		lblRuntimeDistributionType.setBounds(24, 175, 156, 17);
 
 		Composite composite = new Composite(parameterSettingShell, SWT.NONE);
-		composite.setBounds(190, 157, 214, 64);
+		composite.setBounds(190, 157, 500, 64);
 
 		final Button btnRadioButton_2 = new Button(composite, SWT.RADIO);
-		btnRadioButton_2.setBounds(120, 21, 97, 17);
-		btnRadioButton_2.setText("3");
+		btnRadioButton_2.setBounds(260, 21, 120, 17);
+		btnRadioButton_2.setText("High Parallelism");
 
 		final Button btnRadioButton_1 = new Button(composite, SWT.RADIO);
-		btnRadioButton_1.setBounds(60, 21, 97, 17);
+		btnRadioButton_1.setBounds(120, 21, 150, 17);
 		btnRadioButton_1.setSelection(true);
-		btnRadioButton_1.setText("2");
+		btnRadioButton_1.setText("Median Parallelism");
 
 		final Button btnRadioButton = new Button(composite, SWT.RADIO);
-		btnRadioButton.setBounds(0, 21, 97, 17);
-		btnRadioButton.setText("1");
+		btnRadioButton.setBounds(0, 21, 120, 17);
+		btnRadioButton.setText("Low Parallelism");
 
 		Label lblSystemBandwidth = new Label(parameterSettingShell, SWT.NONE);
 		lblSystemBandwidth.setText("Deadline Multiple");
